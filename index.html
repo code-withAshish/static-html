@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>sarkari school ki site</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen bg-indigo-400">
+      <div class="p-6 h-auto w-auto bg-white rounded-xl shadow-xl space-y-4">
+        <div
+          class="text-4xl font-bold underline text-purple-500 text-center mb-10"
+        >
+          Login
+        </div>
+        <form id="login">
+          <div class="flex flex-col space-y-4 m-2">
+            <label class="font-medium text-gray-800" for="username"
+              >Username <span class="text-red-500">*</span></label
+            >
+            <input
+              required
+              name="username"
+              id="username"
+              class="text-md h-6 border-0 border-b-2 border-indigo-300 focus:border-indigo-800 outline-none"
+              type="text"
+            />
+            <label class="font-medium text-gray-800" for="password"
+              >Password <span class="text-red-500">*</span></label
+            >
+            <input
+              required
+              name="password"
+              id="password"
+              class="text-md h-6 border-0 border-b-2 border-indigo-300 focus:border-indigo-800 outline-none"
+              type="password"
+            />
+          </div>
+          <div class="flex justify-center mt-8">
+            <button
+              class="hover:bg-purple-700 transition duration-300 ease-in-out p-4 pl-6 pr-6 bg-purple-400 rounded-2xl"
+              type="submit"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
